@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu cuenta</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulario de Iniciar sesión -->
+        <div class="form-container left" id="login-container">
+            <h2>Iniciar sesión</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Correo electrónico" required>
+                <input type="password" id="login-password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <button id="show-register">¿No tienes cuenta? Regístrate</button>
+        </div>
+
+        <!-- Formulario de Registro -->
+        <div class="form-container right" id="register-container">
+            <h2>Crea tu cuenta</h2>
+            <form id="register-form">
+                <input type="text" id="register-name" placeholder="Nombre" required>
+                <input type="email" id="register-email" placeholder="Correo electrónico" required>
+                <input type="password" id="register-password" placeholder="Contraseña" required>
+                <input type="password" id="register-confirm-password" placeholder="Confirmar Contraseña" required>
+                <button type="submit">Registrar</button>
+            </form>
+            <button id="show-login">¿Ya tienes cuenta? Inicia sesión</button>
+        </div>
+    </div>
+
+    <script src="logica.js"></script>
+</body>
+</html>
